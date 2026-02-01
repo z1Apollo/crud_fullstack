@@ -1,7 +1,7 @@
 import { useState } from "react";
 import type { User } from "../../types/user";
 import * as usersApi from "../../services/users.api"
-import { BtnCancelar, BtnEdit, BtnRemove, BtnSalvar, EditMobile, Li } from "./style";
+import { BtnCancelar, BtnEdit, BtnRemove, BtnSalvar, EditMobile, SectionButtons, UsersGrid } from "./style";
 import { InputsForm } from "../userForm/style";
 
 interface Props {
@@ -39,9 +39,9 @@ export default function UserList({ users, onChange }: Props) {
 
     return (
         <>
-            <ul>
+            <UsersGrid>
                 {users.map((user) => (
-                    <Li key={user.id}>
+                    <li key={user.id}>
                         {editId === user.id ? (
                             <>
                                 <EditMobile>
@@ -55,15 +55,18 @@ export default function UserList({ users, onChange }: Props) {
                                 </EditMobile>
                             </>
                         ):(
-                            <>
-                                <strong>{user.nome}</strong> | <strong>{user.email}</strong>
-                                <BtnEdit onClick={() => handleEdit(user)}>Editar</BtnEdit>
-                                <BtnRemove onClick={() => handleDelete(user.id)}>Excluir</BtnRemove>
+                            <> 
+                                <section>Nome: <strong>{user.nome}</strong> <br /> Email: <strong>{user.email}</strong> 
+                                    <SectionButtons> 
+                                        <BtnEdit onClick={() => handleEdit(user)}>Editar</BtnEdit> 
+                                        <BtnRemove onClick={() => handleDelete(user.id)}>Excluir</BtnRemove> 
+                                    </SectionButtons>
+                                </section>  
                             </>
                         )}
-                    </Li>
+                    </li>
                 ))}
-            </ul>
+            </UsersGrid>
         </>
     )
 }

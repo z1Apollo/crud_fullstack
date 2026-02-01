@@ -109,7 +109,7 @@ export const Header = styled.header`
         width: 100%;
 
         h1 {
-            font-size: 1.8rem;
+            font-size: 3.4vh;
         }
 
         p {
@@ -120,16 +120,14 @@ export const Header = styled.header`
 
 export const Main = styled.main`
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
     gap: 30px;
-    height: 50vh;
     width: 100%;
+    height: 100vh;
+    margin-top: 2rem;
 
     @media (max-width: ${breakpoints.mobile}) {
-        height: 70vh;
-
         h1 {
             font-size: 10px;
         }

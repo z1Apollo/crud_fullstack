@@ -57,25 +57,32 @@ export const BtnCancelar = styled.button`
     }
 `
 
-export const Li = styled.li`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-`
-
 export const EditMobile = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     gap: 5px;
 
     div {
         display: flex;
         gap: 5px;
     }
-        
+`
+
+export const UsersGrid = styled.ul`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 10px;
+
     @media (max-width: ${breakpoints.mobile}) {
-        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
     }
+`
+
+export const SectionButtons = styled.section`
+    display: flex;
+    gap: 5px;
 `
