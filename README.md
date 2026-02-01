@@ -1,105 +1,61 @@
-🚀 Fullstack CRUD com Node.js, Express, PostgreSQL e React
+# 🚀 Fullstack Users CRUD
 
-Este projeto é uma aplicação fullstack desenvolvida para consolidar conceitos de backend e frontend, utilizando boas práticas de arquitetura, organização de código e integração com banco de dados.
+Aplicação fullstack para gerenciamento de usuários, desenvolvida com Node.js, Express, PostgreSQL e React.  
+O projeto implementa um CRUD completo com arquitetura em camadas e integração entre frontend e backend via API REST.
 
-O sistema permite o gerenciamento de usuários (CRUD), incluindo criação, listagem, atualização parcial e exclusão de registros, com comunicação entre frontend e backend via API REST.
+## 🛠️ Tecnologias
 
-🧠 Tecnologias utilizadas
+### Backend
+- Node.js
+- Express
+- TypeScript
+- PostgreSQL (Neon)
+- pg
+- dotenv
+- cors
 
-Backend
+### Frontend
+- React
+- TypeScript
+- Vite
+- Axios
 
-Node.js
+## 🏗️ Estrutura do Projeto
 
-Express
+O backend foi organizado em camadas:
 
-TypeScript
+- Controllers – controle das requisições HTTP
+- Services – regras de negócio
+- Repositories – acesso ao banco de dados
+- Routes – definição das rotas
+- Config – configuração do banco e variáveis de ambiente
 
-PostgreSQL (Neon)
+O frontend foi estruturado com:
 
-pg
+- Pages
+- Components
+- Services (API)
+- Types
 
-dotenv
+## ⚙️ Funcionalidades
 
-CORS
+- Criar usuários
+- Listar usuários
+- Atualizar usuários (PATCH)
+- Remover usuários
+- Integração com PostgreSQL
+- API RESTful
+- Interface React com atualização em tempo real
 
-Frontend
+## 🌐 Deploy
 
-React
+- Backend: Vercel + Neon (PostgreSQL)
+- Frontend: Vercel
 
-TypeScript
+## 🎯 Objetivo
 
-Vite
+Projeto desenvolvido para praticar conceitos de desenvolvimento fullstack, organização de código, TypeScript e integração com banco de dados relacional, seguindo boas práticas de arquitetura.
 
-Axios
+## 👨‍💻 Autor
 
-🏗️ Arquitetura do projeto
-
-O backend foi estruturado seguindo o padrão de camadas:
-
-Controller → responsável por lidar com requisições HTTP
-
-Service → contém as regras de negócio
-
-Repository → responsável pelo acesso ao banco de dados
-
-Routes → definição das rotas da API
-
-Config → configuração do banco e variáveis de ambiente
-
-O frontend foi organizado com separação de responsabilidades entre:
-
-Pages
-
-Components
-
-Services (API)
-
-Types
-
-⚙️ Funcionalidades
-
-✅ Criar usuários
-
-✅ Listar usuários
-
-✅ Atualizar usuários (PATCH)
-
-✅ Deletar usuários
-
-✅ Integração com PostgreSQL
-
-✅ API REST
-
-✅ Interface React com atualização dinâmica de dados
-
-🌐 Deploy
-
-O projeto foi preparado para deploy utilizando:
-
-Backend: Vercel + Neon (PostgreSQL)
-
-Frontend: Vercel
-
-🎯 Objetivo do projeto
-
-Este projeto foi desenvolvido com o objetivo de aprofundar conhecimentos em:
-
-Desenvolvimento fullstack
-
-Boas práticas de organização de código
-
-Integração entre frontend e backend
-
-Uso de banco de dados relacional
-
-TypeScript em aplicações reais
-
-Preparação de aplicações para deploy em produção
-
-📸 Preview
-
-// jaja coloco uma foto ou video
-
-🧑‍💻 Autor
-
-Desenvolvido por Apollo.
+Apollo Ferreira
